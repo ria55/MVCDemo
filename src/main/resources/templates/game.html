@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" 
+			rel="stylesheet">
+	</head>
+
+	<body>
+	
+		<div id="header">
+			<p>BÁRÁNY</p>
+		</div>
+		
+		<div id="menu">
+			<a data-th-href="@{/home}">Főoldal</a>
+			<a data-th-href="@{/about}">Rólam</a>
+			<a data-th-href="@{/game}">Játék</a>
+		</div>
+		
+		<div id="content">
+			<a class="button" data-th-href="@{/play}">
+				Nyomj meg!
+			</a>
+
+			<div>
+				<p class="num_text" data-th-text="${userText}"></p>
+				<p class="num_text" data-th-text="${computerText}"></p>
+				<br>
+				<p data-th-text="${winner}"></p>
+			</div>
+		</div>
+
+
+		
+	</body>
+		
+</html>
