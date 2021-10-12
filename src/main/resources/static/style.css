@@ -5,9 +5,8 @@
 body {
 	background-color: black;
 	color: white;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
-	width: 70%;
 }
 
 p {
@@ -15,9 +14,18 @@ p {
 	padding: 0;
 }
 
+#page {
+	width: 70%;
+	margin: 0 auto 20px auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
 #header {
 	height: 200px;
 	font-size: 60px;
+	color: pink;
 	display: flex;
 	justify-content: center;
 	align-items: center;

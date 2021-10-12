@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="hun">
 	
 	<head>
+		<title>MVC Demo</title>
 		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" 
-			rel="stylesheet">
 	</head>
 
 	<body>
-	
+
+	<div id="page">
+
 		<div id="header">
 			<p>BÁRÁNY</p>
 		</div>
-		
+
 		<div id="menu">
 			<a data-th-href="@{/home}">Főoldal</a>
 			<a data-th-href="@{/about}">Rólam</a>
 			<a data-th-href="@{/game}">Játék</a>
 		</div>
-		
+
 		<div id="content">
 			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper iaculis leo, sed dignissim arcu facilisis a. Mauris quam nunc, placerat vel ultricies ac, auctor a eros. Integer accumsan sem augue, vitae volutpat massa ultrices id. Quisque mattis tristique tortor nec semper. Maecenas at lorem a enim elementum vehicula a aliquam elit. Nullam feugiat ex vel imperdiet eleifend. Vivamus mollis venenatis urna, quis imperdiet mi accumsan sit amet. Praesent varius sem eget nunc dapibus, id tincidunt ligula auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam malesuada dignissim pulvinar.
-			<br><br>
-			Ut vel orci nec sem aliquam elementum quis non tortor. Duis id tincidunt nunc. Nam est lorem, porttitor nec imperdiet ut, interdum eu velit. Nunc sollicitudin ante lorem, quis pretium ligula posuere quis. Maecenas porttitor commodo nibh vitae vulputate. Sed malesuada molestie augue vitae commodo. Maecenas elementum, nibh ut vulputate condimentum, purus felis sollicitudin ipsum, at suscipit felis quam ut ante. Etiam sit amet vulputate est.
-			<br><br>
-			Etiam feugiat sodales fringilla. Donec ac eros vitae eros rutrum accumsan. Phasellus justo ex, efficitur vel nisl sit amet, semper laoreet arcu. Proin rhoncus feugiat erat, non mattis orci ullamcorper a. Aenean eget tincidunt tellus. In commodo ac dolor eu laoreet. Cras mollis id massa vitae varius. In semper consequat diam, nec malesuada est luctus nec. In fringilla rhoncus gravida. Fusce dui leo, ultricies vitae facilisis eget, cursus quis ex. Nam mollis fringilla efficitur. Suspendisse potenti. Suspendisse arcu tellus, egestas ut mi blandit, convallis lacinia elit.
-			<br><br>
-			Morbi eget enim nec orci fringilla congue eu sed nisl. Praesent feugiat lacinia lacinia. Sed sit amet turpis consequat, ullamcorper diam sit amet, bibendum lacus. In in ipsum vel erat laoreet varius in vel augue. Curabitur tellus mauris, facilisis a mi at, laoreet vehicula urna. Pellentesque gravida justo a felis dignissim, sit amet blandit odio convallis. In aliquam feugiat eros sit amet sodales. Integer et sem arcu. Sed vitae velit metus. Aliquam scelerisque non sapien at vestibulum. Integer consectetur, lorem nec tempus congue, metus leo elementum ex, in ullamcorper enim nisi id nisi. Aliquam porttitor ante eu posuere molestie. Aliquam erat volutpat. Maecenas sollicitudin commodo luctus.
-			<br><br>
-			Aliquam erat volutpat. Praesent sagittis arcu ut ex rutrum tristique. Sed eget tincidunt arcu. Nullam condimentum fringilla erat eu convallis. Duis arcu lacus, elementum nec malesuada eget, mollis sed nisi. Donec consequat quam et turpis lobortis tristique. Praesent non neque sed magna luctus hendrerit ac in dolor. Pellentesque id dignissim tortor. Etiam tincidunt, nibh vitae rhoncus ultricies, elit arcu egestas nunc, nec fringilla odio sapien et tellus. Nullam nec dictum nibh, rhoncus scelerisque est. Curabitur ullamcorper nunc in finibus scelerisque. Donec convallis est augue, quis fermentum urna tincidunt in. Phasellus commodo semper enim, ut viverra justo dapibus non.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper iaculis leo, sed dignissim arcu facilisis a. Mauris quam nunc, placerat vel ultricies ac, auctor a eros. Integer accumsan sem augue, vitae volutpat massa ultrices id. Quisque mattis tristique tortor nec semper. Maecenas at lorem a enim elementum vehicula a aliquam elit. Nullam feugiat ex vel imperdiet eleifend. Vivamus mollis venenatis urna, quis imperdiet mi accumsan sit amet. Praesent varius sem eget nunc dapibus, id tincidunt ligula auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam malesuada dignissim pulvinar.
+				<br><br>
+				Ut vel orci nec sem aliquam elementum quis non tortor. Duis id tincidunt nunc. Nam est lorem, porttitor nec imperdiet ut, interdum eu velit. Nunc sollicitudin ante lorem, quis pretium ligula posuere quis. Maecenas porttitor commodo nibh vitae vulputate. Sed malesuada molestie augue vitae commodo. Maecenas elementum, nibh ut vulputate condimentum, purus felis sollicitudin ipsum, at suscipit felis quam ut ante. Etiam sit amet vulputate est.
+				<br><br>
+				Etiam feugiat sodales fringilla. Donec ac eros vitae eros rutrum accumsan. Phasellus justo ex, efficitur vel nisl sit amet, semper laoreet arcu. Proin rhoncus feugiat erat, non mattis orci ullamcorper a. Aenean eget tincidunt tellus. In commodo ac dolor eu laoreet. Cras mollis id massa vitae varius. In semper consequat diam, nec malesuada est luctus nec. In fringilla rhoncus gravida. Fusce dui leo, ultricies vitae facilisis eget, cursus quis ex. Nam mollis fringilla efficitur. Suspendisse potenti. Suspendisse arcu tellus, egestas ut mi blandit, convallis lacinia elit.
+				<br><br>
+				Morbi eget enim nec orci fringilla congue eu sed nisl. Praesent feugiat lacinia lacinia. Sed sit amet turpis consequat, ullamcorper diam sit amet, bibendum lacus. In in ipsum vel erat laoreet varius in vel augue. Curabitur tellus mauris, facilisis a mi at, laoreet vehicula urna. Pellentesque gravida justo a felis dignissim, sit amet blandit odio convallis. In aliquam feugiat eros sit amet sodales. Integer et sem arcu. Sed vitae velit metus. Aliquam scelerisque non sapien at vestibulum. Integer consectetur, lorem nec tempus congue, metus leo elementum ex, in ullamcorper enim nisi id nisi. Aliquam porttitor ante eu posuere molestie. Aliquam erat volutpat. Maecenas sollicitudin commodo luctus.
+				<br><br>
+				Aliquam erat volutpat. Praesent sagittis arcu ut ex rutrum tristique. Sed eget tincidunt arcu. Nullam condimentum fringilla erat eu convallis. Duis arcu lacus, elementum nec malesuada eget, mollis sed nisi. Donec consequat quam et turpis lobortis tristique. Praesent non neque sed magna luctus hendrerit ac in dolor. Pellentesque id dignissim tortor. Etiam tincidunt, nibh vitae rhoncus ultricies, elit arcu egestas nunc, nec fringilla odio sapien et tellus. Nullam nec dictum nibh, rhoncus scelerisque est. Curabitur ullamcorper nunc in finibus scelerisque. Donec convallis est augue, quis fermentum urna tincidunt in. Phasellus commodo semper enim, ut viverra justo dapibus non.
 			</p>
 		</div>
-		
+
+	</div>
+
 	</body>
 		
 </html>
