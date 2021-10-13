@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="hun">
+	
+	<head>
+		<title>MVC Demo</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+	<div id="page">
+
+		<div id="header">
+			<p>BÁRÁNY</p>
+		</div>
+
+		<div id="menu">
+			<a data-th-href="@{/home}">Főoldal</a>
+			<a data-th-href="@{/about}">Rólam</a>
+			<a data-th-href="@{/game}">Játék</a>
+			<a data-th-href="@{/form}">Vicci</a>
+		</div>
+
+		<div id="content">
+			<form action="#" th:action="@{/form}" method="post" data-th-object="${myForm}">
+				<label>Neved:</label>
+				<label>
+					<input type="text" data-th-field="*{name}" />
+				</label><br/>
+
+				<label>Korod:</label>
+				<label>
+					<input type="number" data-th-field="*{age}" />
+				</label><br/>
+
+				<label>Kedvenc számod:</label>
+				<label>
+					<input type="number" data-th-field="*{favoriteNumber}" />
+				</label><br/>
+
+				<button type="submit">Küldöm!</button>
+			</form>
+		</div>
+
+	</div>
+		
+	</body>
+		
+</html>
