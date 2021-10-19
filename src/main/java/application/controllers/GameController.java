@@ -16,10 +16,12 @@ public class GameController {
         this.service = service;
     }
 
+
     @GetMapping("/game")
     public String getGamePage() {
         return "game";
     }
+
 
     @GetMapping(value = { "/play"})
     public String getGameNumber(Model model) {

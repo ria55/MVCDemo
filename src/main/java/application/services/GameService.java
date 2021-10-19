@@ -5,16 +5,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class GameService {
 
-    /*
-    int userNumber = (int) (Math.random() * 6 + 1);
-        int computerNumber = (int) (Math.random() * 6 + 1);
-
-        String userText = "A te számod: " + userNumber;
-        String computerText = "A számítógép száma: " + computerNumber;
-
-        String winner = (userNumber > computerNumber ? "Te nyertél!" :
-                (userNumber == computerNumber ? "Döntetlen!" : "A számítógép nyert!"));
-     */
+    public String sayHello(String name) {
+        return "Hello, dear " + name + "!";
+    }
 
     public String getTextWithNumber(boolean isForUser, int number) {
         if (isForUser) {
