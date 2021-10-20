@@ -1,9 +1,11 @@
 package application.controllers;
 
+import application.testConfigs.TestConfig;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
@@ -11,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@SpringBootTest
+@SpringBootTest(classes = TestConfig.class)
 @AutoConfigureMockMvc
 class StaticControllerTest {
 
@@ -40,4 +42,33 @@ class StaticControllerTest {
                 .andReturn();
     }
 
+    @Test
+    void checkGameWithoutLogin() throws Exception {
+        mockMvc.perform(get("/game"))
+                .andExpect(
+                        status().is(403)
+                )
+                .andReturn();
+    }
+
+    @WithMockUser("user")
+    @Test
+    void checkGameWithUser() throws Exception {
+        mockMvc.perform(get("/game"))
+                .andExpect(
+                        status().is(403)
+                )
+                .andReturn();
+    }
+
+
+    @Test
+    @WithMockUser("admin")
+    void checkGameWithAdmin() throws Exception {
+        mockMvc.perform(get("/game"))
+                .andExpect(
+                        status().isOk()
+                )
+                .andReturn();
+    }
 }
