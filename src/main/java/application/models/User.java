@@ -34,12 +34,10 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<SimpleGrantedAuthority> list = new ArrayList<>();
 
-        /*for (UserAuthority auth : role.AUTHORITIES) {
+        for (UserAuthority auth : role.AUTHORITIES) {
             SimpleGrantedAuthority authority = new SimpleGrantedAuthority(auth.toString());
             list.add(authority);
-        }*/
-
-        list.add(new SimpleGrantedAuthority("ADD"));
+        }
 
         return list;
     }
